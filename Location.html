@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="AboodAlobada">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>our Location</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="./assets/css/fontawesome-2.css">
+    <link rel="stylesheet" href="./assets/css/templatemo-edu-meeting-2.css">
+    <link rel="stylesheet" href="./assets/css/owl-2.css">
+    <link rel="stylesheet" href="./assets/css/lightbox-2.css">  
+<!--
+
+TemplateMo 569 Edu Meeting
+
+https://templatemo.com/tm-569-edu-meeting
+
+-->
+  </head>
+
+<body>
+
+   
+
+  <!-- Sub Header -->
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8">
+          <div class="left-content">
+            <p>This is an educational <em>Website</em> For <em>Al Shola School</em></p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+     
+      </div>
+    </div>
+  </div>
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.htmEdu l" class="logo">
+                        Al Shola School
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li><a href="index.html" >Home</a></li>
+                      <li><a href="Weeklyplans.html">Weekly Plans</a></li>
+                        <li><a href="Album.html" >Album</a></li>
+                        <li><a href="Location.html"class="active" >Our Location</a></li>
+                        <li><a href="./ChatGPT_web/chat/AbdelrhmanAlobada.html" >Student Helper(chat GPT)</a></li>
+                        <li><a href="https://seraj-uae.com/chat/" >ٍFile Helper</a></li>
+
+
+
+                       <!----< class="has-sub">
+                         <a href="javascript:void(0)">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="meetings.html">Upcoming Meetings</a></li>
+                                <li><a href="meeting-details.html">Meeting Details</a></li>
+                            </ul>
+                        </li>--->
+
+                        <li ><a href="Sign-in.html">sign in</a></li> 
+                      </ul>        
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+  <!-- ***** Header Area End ***** -->
+
+  <section class="heading-page2 header-text2" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h6>Here are our Location</h6>
+          <h2>Al Shola Location </h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1229.9458627525755!2d55.44704039270111!3d25.318904181105896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5ed617ea6efb%3A0x9833ce9b3d1fbca3!2z2YXYr9ix2LPYqSDYp9mE2LTYudmE2Kkg2KfZhNiu2KfYtdip!5e1!3m2!1sar!2sae!4v1681934180647!5m2!1sar!2sae" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        </div>
+      </div> 
+    </div>
+  </section>
+    <div class="footer">
+      <p>Copyright © 20223 Aood Alobada All Rights Reserved. 
+          <br>Design: Abood Alobada</a></p>
+    </div>
+
+  </section>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+
+
+  </body>
+
+</html>
